@@ -13,7 +13,7 @@ input.addEventListener("input", async function (e) {
   const config = { params: { q: searchInput } };
   const res = await axios.get(`https://api.tvmaze.com/search/shows`, config);
   displayImg(res.data);
-  console.log(res.data);
+//   console.log(res.data);
 });
 
 const displayImg = (shows) => {
